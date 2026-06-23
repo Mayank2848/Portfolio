@@ -1,117 +1,90 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Mayank Gupta | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-```
-<!-- Navbar -->
-
-<nav>
-    <h2>Mayank Gupta</h2>
-
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-    </ul>
-</nav>
-
-<!-- Hero Section -->
-
-<section id="home" class="hero">
-
-    <div class="hero-text">
-        <h1>Hello, I'm Mayank</h1>
-
-        <p>
-            B.Tech CSE (AI & ML) Student
-            learning Web Development and Java.
-        </p>
-
-        <button>Hire Me</button>
-    </div>
-
-    <div class="hero-image">
-        <img src="WhatsApp Image 2026-06-18 at 1.26.17 AM.jpeg" alt="Profile">
-    </div>
-
-</section>
-
-<!-- Skills Section -->
-
-<section id="skills" class="skills">
-
-    <h2>My Skills</h2>
-
-    <div class="skill-container">
-
-        <div class="card">
-            <h3>HTML</h3>
-            <p>Creating webpage structures.</p>
+    <nav>
+        <div class="logo">
+            <h2>Mayank Gupta</h2>
         </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
 
-        <div class="card">
-            <h3>CSS</h3>
-            <p>Designing beautiful websites.</p>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span class="highlight">Mayank</span></h1>
+            <p>
+                B.Tech CSE (AI & ML) Student passionate about learning Web Development, Java, and building innovative solutions.
+            </p>
+            <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
         </div>
-
-        <div class="card">
-            <h3>Java</h3>
-            <p>Object Oriented Programming.</p>
+        <div class="hero-image">
+            <img src="WhatsApp Image 2026-06-18 at 1.26.17 AM.jpeg" alt="Mayank Gupta Profile">
         </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- Projects Section -->
-
-<section id="projects" class="projects">
-
-    <h2>My Projects</h2>
-
-    <div class="project-container">
-
-        <div class="card">
-            <h3>Skill Bridge</h3>
-            <p>Virtual classroom platform for rural colleges.</p>
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-container">
+            <div class="card skill-card">
+                <i class="fab fa-html5 skill-icon" style="color: #e34c26;"></i>
+                <h3>HTML</h3>
+                <p>Creating semantic and structured webpage frameworks.</p>
+            </div>
+            <div class="card skill-card">
+                <i class="fab fa-css3-alt skill-icon" style="color: #264de4;"></i>
+                <h3>CSS</h3>
+                <p>Designing responsive, modern, and beautiful layouts.</p>
+            </div>
+            <div class="card skill-card">
+                <i class="fab fa-java skill-icon" style="color: #f89820;"></i>
+                <h3>Java</h3>
+                <p>Developing robust Object-Oriented Programming solutions.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Civic Seva</h3>
-            <p>Civic issue reporting and tracking platform.</p>
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="card project-card">
+                <h3>Skill Bridge</h3>
+                <p>A virtual classroom platform tailored for rural college ecosystems.</p>
+                <span class="tag">Java</span> <span class="tag">Web</span>
+            </div>
+            <div class="card project-card">
+                <h3>Civic Seva</h3>
+                <p>A centralized platform for citizens to report and track local civic issues.</p>
+                <span class="tag">HTML/CSS</span> <span class="tag">JS</span>
+            </div>
+            <div class="card project-card">
+                <h3>Portfolio Website</h3>
+                <p>Personal interactive digital portfolio built from scratch.</p>
+                <span class="tag">Frontend</span>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Personal portfolio built using HTML, CSS and JavaScript.</p>
-        </div>
+    <section id="resume" class="resume">
+        <h2>My Resume</h2>
+        <p>Interested in my background? Click below to view my comprehensive CV.</p>
+        <button id="cv"><i class="fas fa-file-download"></i> View CV</button>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- Resume Section -->
-
-<section id="resume" class="resume">
-
-    <h2>My Resume</h2>
-
-    <p>Click below to view my CV.</p>
-
-    <button id="cv">View CV</button>
-
-</section>
-
-<script src="style.js"></script>
-```
-
+    <script src="style.js"></script>
 </body>
 </html>
